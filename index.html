@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Craig Adam Joinery | Kitchens &amp; Staircases in Dunfermline, Fife</title>
+<meta name="description" content="Kitchen fitting, staircases and full joinery installs in Dunfermline, Fife. Craig Adam — 5.0 from 89 reviews on Fife Trusted Trader, trading since 2003.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=Fira+Code:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF7F0;
+  --panel:#EFE7D4;
+  --ink:#2A2823;
+  --ink-soft:#5A564C;
+  --birch:#E8DCC0;
+  --graphite:#33312E;
+  --blueprint:#3B5B73;
+  --blueprint-deep:#2A4356;
+  --brass:#A9822C;
+  --brass-deep:#7E611E;
+  --edge:rgba(42,40,35,.18);
+  --edge-soft:rgba(42,40,35,.1);
+
+  --display:'Roboto Slab',Georgia,serif;
+  --body:'Source Sans 3',system-ui,-apple-system,sans-serif;
+  --mono:'Fira Code',ui-monospace,Menlo,monospace;
+
+  --wrap:1140px;
+  --gutter:clamp(20px,5vw,56px);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+:is(section,main)[id]{scroll-margin-top:92px;}
+body{
+  margin:0;
+  background:
+    linear-gradient(var(--edge-soft) 1px,transparent 1px),
+    linear-gradient(90deg,var(--edge-soft) 1px,transparent 1px),
+    var(--paper);
+  background-size:28px 28px,28px 28px,auto;
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+button{font:inherit;}
+:focus-visible{outline:2.5px solid var(--blueprint-deep);outline-offset:3px;}
+
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter);}
+
+.demo-flag{background:var(--graphite);color:var(--paper);font-family:var(--mono);font-size:11px;letter-spacing:.03em;text-align:center;padding:8px 16px;line-height:1.45;}
+.demo-flag strong{color:#D9B25E;}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--blueprint-deep);
+  margin:0 0 16px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.eyebrow::before{content:"";width:16px;height:2px;background:var(--brass);}
+.eyebrow--light{color:#C9A85E;}
+.eyebrow--light::before{background:#C9A85E;}
+
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.005em;line-height:1.14;margin:0;color:var(--ink);}
+.section--dark h1,.section--dark h2,.section--dark h3{color:var(--paper);}
+
+/* placeholder photography panel */
+.ph{
+  position:relative;
+  background:var(--panel);
+  min-height:210px;
+  border:1px solid var(--edge);
+}
+.ph::after{
+  content:"Placeholder — real photography";
+  position:absolute;
+  left:14px;bottom:12px;
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:var(--paper);
+  background:rgba(42,40,35,.65);
+  padding:5px 9px;
+}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(250,247,240,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--edge);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:72px;}
+.wordmark{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.005em;text-decoration:none;color:var(--ink);white-space:nowrap;flex-shrink:1;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+.wordmark .full{display:none;}
+.wordmark .short{display:inline;}
+.nav{display:none;gap:22px;list-style:none;margin:0;padding:0;}
+.nav a{font-size:14.5px;font-weight:600;text-decoration:none;color:var(--ink-soft);}
+.nav a:hover{color:var(--blueprint-deep);}
+.header-actions{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.tel-link{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--edge);color:var(--ink);text-decoration:none;flex-shrink:0;}
+.btn-header{white-space:nowrap;padding:10px 14px;font-size:14px;}
+.btn-header .full{display:none;}
+.btn-header .short{display:inline;}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--edge);background:none;cursor:pointer;flex-shrink:0;}
+.nav-toggle svg{width:17px;height:17px;}
+@media(min-width:560px){
+  .wordmark .full{display:inline;}
+  .wordmark .short{display:none;}
+  .btn-header .full{display:inline;}
+  .btn-header .short{display:none;}
+}
+@media(min-width:900px){
+  .nav{display:flex;}
+  .nav-toggle{display:none;}
+}
+.mobile-menu{display:none;flex-direction:column;gap:2px;padding:10px var(--gutter) 18px;border-bottom:1px solid var(--edge);background:var(--paper);}
+.mobile-menu.is-open{display:flex;}
+.mobile-menu a{padding:12px 4px;font-size:15.5px;font-weight:600;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--edge-soft);}
+.mobile-menu a:last-child{border-bottom:none;}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-weight:700;font-size:15px;padding:13px 24px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;}
+.btn-primary{background:var(--ink);color:var(--paper);}
+.btn-primary:hover{background:var(--blueprint-deep);}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink);border-width:1.5px;}
+.btn-ghost:hover{background:rgba(42,40,35,.06);}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+
+/* hero */
+.hero{padding:52px 0 0;overflow:hidden;}
+.hero-grid{display:grid;gap:36px;align-items:center;}
+.hero-copy p{font-size:18px;color:var(--ink-soft);max-width:50ch;margin:20px 0 28px;}
+.hero h1{font-size:clamp(28px,4.4vw,44px);max-width:19ch;}
+@media(min-width:900px){
+  .hero-grid{grid-template-columns:1.05fr .95fr;}
+}
+
+/* stair signature device — a rise-and-run profile, drawn in, landing on the real rating */
+.stair-stage{position:relative;aspect-ratio:5/4;background:var(--panel);border:1px solid var(--edge);display:flex;align-items:flex-end;justify-content:center;}
+.stair-stage svg{width:86%;height:80%;display:block;}
+.stair-line{stroke-dasharray:100;stroke-dashoffset:100;}
+.stair-stage.ready .stair-line{animation:draw 1.3s cubic-bezier(.3,.6,.2,1) forwards .2s;}
+@keyframes draw{to{stroke-dashoffset:0;}}
+.stair-readout{opacity:0;transform:translateY(6px);}
+.stair-stage.ready .stair-readout{animation:readout .5s ease-out forwards 1.4s;}
+@keyframes readout{to{opacity:1;transform:translateY(0);}}
+@media(prefers-reduced-motion:reduce){
+  .stair-line{stroke-dashoffset:0!important;animation:none!important;}
+  .stair-readout{opacity:1!important;transform:none!important;animation:none!important;}
+}
+.stair-caption{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);background:rgba(250,247,240,.85);padding:5px 9px;}
+
+/* section rhythm — dimension-line dividers with tick end-caps */
+.section{padding:64px 0;position:relative;}
+.section--dark{background:var(--graphite);color:var(--paper);}
+.section--dark .section-head p{color:rgba(250,247,240,.78);}
+.dim-divider{border:none;border-top:1.5px solid var(--edge);margin:0;position:relative;}
+.dim-divider::before,.dim-divider::after{content:"";position:absolute;top:-4px;width:1.5px;height:9px;background:var(--edge);}
+.dim-divider::before{left:var(--gutter);}
+.dim-divider::after{right:var(--gutter);}
+.section-head{max-width:64ch;margin-bottom:36px;}
+.section-head h2{font-size:clamp(24px,3.4vw,34px);}
+.section-head p{font-size:16.5px;color:var(--ink-soft);margin-top:12px;}
+
+/* trust stats */
+.stat-row{display:flex;flex-wrap:wrap;gap:1px;background:rgba(250,247,240,.16);border:1px solid rgba(250,247,240,.16);margin-top:8px;}
+.stat-item{background:var(--graphite);padding:22px 20px;flex:1 1 200px;}
+.stat-item b{display:block;font-family:var(--display);font-size:24px;color:#D9B25E;margin-bottom:6px;}
+.stat-item span{font-size:14px;color:rgba(250,247,240,.82);}
+
+/* services */
+.service-grid{display:grid;gap:1px;background:var(--edge);border:1px solid var(--edge);}
+@media(min-width:640px){.service-grid{grid-template-columns:1fr 1fr 1fr;}}
+.service{background:var(--paper);padding:clamp(22px,3.4vw,30px);}
+.service-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.service-head svg{width:24px;height:24px;flex-shrink:0;color:var(--blueprint-deep);}
+.service-head h3{font-size:17px;font-weight:700;}
+.service p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+/* project-management pair */
+.pair-grid{display:grid;gap:28px;}
+@media(min-width:760px){.pair-grid{grid-template-columns:1fr 1fr;align-items:center;}}
+.pair-copy p{color:var(--ink-soft);font-size:16.5px;margin:0 0 14px;max-width:48ch;}
+.pair-list{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:9px;}
+.pair-list li{font-size:15px;color:var(--ink-soft);padding-left:20px;position:relative;}
+.pair-list li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--brass);}
+
+/* contact — phone only */
+.contact-panel{background:var(--panel);border:1px solid var(--edge);padding:clamp(28px,5vw,48px);text-align:center;}
+.call-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin:26px 0 6px;}
+.call-card{display:flex;flex-direction:column;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--edge);padding:20px 28px;text-decoration:none;color:var(--ink);min-width:220px;}
+.call-card:hover{border-color:var(--blueprint-deep);}
+.call-card b{font-family:var(--mono);font-size:21px;font-weight:600;}
+.call-card span{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);}
+.contact-panel > p{color:var(--ink-soft);font-size:16px;max-width:48ch;margin:0 auto;}
+
+/* footer */
+.site-footer{padding:38px 0 34px;border-top:1px solid var(--edge);}
+.footer-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;}
+.footer-row p{font-size:13px;color:var(--ink-soft);margin:0;}
+.footer-badge{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<div class="demo-flag">Unpublished concept — <strong>not affiliated with or authorised by Craig Adam Joinery.</strong> Rating cited is real and independently sourced — no review wording copied or invented.</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark"><span class="full">Craig Adam Joinery</span><span class="short">Craig Adam</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#reviews">Reviews</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="tel-link" href="tel:+447837081343" aria-label="Call 07837 081343">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a class="btn btn-primary btn-header" href="tel:+447837081343"><span class="full">Call now</span><span class="short">Call</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#reviews">Reviews</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+447837081343">Call 07837 081343</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Craig Adam Joinery · Dunfermline, Fife</p>
+        <h1>Kitchens and staircases, fitted by the same person from start to finish.</h1>
+        <p>5.0 from 89 reviews on Fife Trusted Trader. Craig's been doing this since 2003, and still runs every job himself — including the other trades, when a project needs more than joinery.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="tel:+447837081343">Call Craig — 07837 081343</a>
+          <a class="btn btn-ghost" href="tel:+441383727416">01383 727416 (landline)</a>
+        </div>
+      </div>
+      <div class="stair-stage" id="stairStage" role="img" aria-label="Illustration of a staircase rise-and-run profile drawn step by step, landing on a 5.0 rating from 89 reviews">
+        <svg viewBox="0 0 220 190" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+          <rect x="0" y="176" width="220" height="4" fill="var(--ink)" opacity=".14"/>
+          <polyline class="stair-line" pathLength="100" points="10,170 10,146 50,146 50,122 90,122 90,98 130,98 130,74 170,74 170,50 210,50" fill="none" stroke="var(--blueprint)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <g class="stair-readout">
+            <rect x="128" y="14" width="86" height="30" fill="var(--paper)" stroke="var(--edge)"/>
+            <text x="171" y="34" text-anchor="middle" font-family="var(--mono)" font-size="14" font-weight="600" fill="var(--ink)">5.0 · 89</text>
+          </g>
+        </svg>
+        <span class="stair-caption">Fife Trusted Trader, since 2013</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section section--dark" id="reviews">
+    <hr class="dim-divider" style="border-color:var(--edge-soft);">
+    <div class="wrap" style="padding-top:44px;">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--light">Checked by the council, not by us</p>
+        <h2>Rated 5.0 by 89 real customers</h2>
+        <p>Fife Trusted Trader is a Trading Standards-backed scheme — a record Craig's own current site doesn't show.</p>
+      </div>
+      <div class="stat-row">
+        <div class="stat-item"><b>5.0 / 5</b><span>From 89 reviews, Fife Trusted Trader</span></div>
+        <div class="stat-item"><b>2013</b><span>Trusted Trader member since</span></div>
+        <div class="stat-item"><b>2003</b><span>Trading since</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What Craig fits</p>
+        <h2>Kitchens, staircases, full joinery installs</h2>
+        <p>The two jobs he's best known for, plus the wider joinery that goes with them.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service">
+          <div class="service-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 9v12"/></svg>
+            <h3>Kitchen fitting</h3>
+          </div>
+          <p>Full kitchen fits, cabinetry and worktops, start to finish.</p>
+        </div>
+        <div class="service">
+          <div class="service-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4,20 4,16 9,16 9,12 14,12 14,8 19,8 19,4"/></svg>
+            <h3>Staircases</h3>
+          </div>
+          <p>New staircases and replacements, built and fitted to measure.</p>
+        </div>
+        <div class="service">
+          <div class="service-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v16h16"/><path d="M4 10h6"/><path d="M10 4v6"/></svg>
+            <h3>Full joinery installs</h3>
+          </div>
+          <p>General joinery, fitted properly as part of a wider job.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MANAGEMENT -->
+  <section class="section" style="background:var(--panel);">
+    <hr class="dim-divider" style="margin-bottom:44px;">
+    <div class="wrap pair-grid">
+      <div class="ph" role="img" aria-label="Placeholder image — a fitted kitchen or staircase project"></div>
+      <div class="pair-copy">
+        <p class="eyebrow">On bigger jobs</p>
+        <h2 style="font-size:clamp(24px,3.2vw,32px);margin-bottom:14px;">One person, the whole job</h2>
+        <p>On a bigger renovation, Craig project-manages the other trades too — so there's one person to call, not four.</p>
+        <ul class="pair-list">
+          <li>One point of contact for the whole job</li>
+          <li>Other trades coordinated, not just his own joinery</li>
+          <li>20+ years doing this in Fife</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <hr class="dim-divider" style="margin-bottom:44px;">
+    <div class="wrap">
+      <div class="contact-panel">
+        <p class="eyebrow" style="justify-content:center;">Get in touch</p>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);">Call Craig</h2>
+        <p>Tell him what the job is and roughly where. He'll come and take a look, then give you a straight price — no obligation to book.</p>
+        <div class="call-row">
+          <a class="call-card" href="tel:+447837081343"><b>07837 081343</b><span>Mobile — fastest</span></a>
+          <a class="call-card" href="tel:+441383727416"><b>01383 727416</b><span>Landline</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Concept design — unpublished demonstration, not a live website.</p>
+    <span class="footer-badge">Built by Longshore Studio</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var stairStage = document.getElementById('stairStage');
+  if(reduceMotion){
+    stairStage.classList.remove('ready');
+  } else {
+    requestAnimationFrame(function(){
+      setTimeout(function(){ stairStage.classList.add('ready'); }, 250);
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
